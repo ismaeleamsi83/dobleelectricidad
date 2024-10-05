@@ -31,9 +31,25 @@ export class LoginComponent implements OnInit {
   }
 
   getIsLogin(){  
-    if(this.authService.getStateLogin()){
-      this.router.navigateByUrl('/dashboard');
-    }
+    this.authService.getStateLogin().subscribe({
+      next: (res) => {
+        if(res){
+          this.router.navigate(['/dashboard']);
+        }else{
+          console.log("No esta logueado");
+        }
+      },
+      error: (err) => {
+        console.error(err);
+      },
+      complete: () => {
+        console.log('complete is login');
+      }
+    })
+    
+    // if(isLogin == true){
+    //   this.router.navigateByUrl('/dashboard');
+    // }
   }
 
   onSubmit(){
