@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="forms">
+  <img src="../../../assets/images/logo-doble-electricidad.jpeg" alt="">
+  <div>
+    <input type="email" placeholder="Introduzca su Email" formControlName="email" />
+  </div>
+  <div>
+    <input type="password" placeholder="Introduzca su Contraseña" formControlName="password" />
+  </div>
+  @if(messageAlert){
+    <div>
+      <p>Credenciales no válidas...</p>
+    </div>
+  }
+  <button type="submit" [disabled]="forms.invalid" >LOGIN</button>
+</form>
