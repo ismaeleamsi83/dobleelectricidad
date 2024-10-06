@@ -1,1 +1,11 @@
-<p>dashboard works!</p>
+<div style="display: flex; flex-direction: column; height: 100vh">
+  <div style="flex-shrink: 0">
+    <app-header (menuToggle)="toggleSidenav()"></app-header>
+  </div>
+  <div style="flex-grow: 1; position: relative">
+    <app-sidenav [isOpen]="sidenavOpened" (menuToggle)="toggleSidenav()"></app-sidenav>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

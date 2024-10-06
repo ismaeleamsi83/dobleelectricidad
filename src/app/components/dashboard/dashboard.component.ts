@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router, RouterModule } from '@angular/router';
+import { HeaderComponent } from "../header/header.component";
+import { SidenavComponent } from "../sidenav/sidenav.component";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, HeaderComponent, SidenavComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit {
+
+  sidenavOpened = false;
 
   constructor(
     private authService: AuthService,
@@ -31,6 +35,10 @@ export class DashboardComponent implements OnInit {
       },
       error: (err) => console.error(err),
     });
+  }
+
+  toggleSidenav() {
+    this.sidenavOpened = !this.sidenavOpened;
   }
 
 }

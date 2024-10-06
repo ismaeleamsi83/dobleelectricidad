@@ -1,0 +1,22 @@
+.example-container {
+    max-width: max-content;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+.example-sidenav {
+    background-color: rgba(10, 31, 56, 0.9);
+    color: rgb(204, 204, 204);
+    padding: 20px;
+    h4{
+        width: max-content;
+        margin: 16px 0;
+    }
+    h4:hover{
+        cursor: pointer;
+    }
+}
+
