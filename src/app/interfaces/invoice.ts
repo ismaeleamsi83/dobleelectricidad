@@ -4,4 +4,5 @@ export interface Invoice {
   fecha: Date;
   importe: number;
   direccion: string;
+  pdfUrl: string;
 }

@@ -16,7 +16,7 @@ import { DatefilterPipe } from '../../pipes/datefilter.pipe';
 export class InvoicequeryComponent implements OnInit, AfterViewInit {
   private _liveAnnouncer = inject(LiveAnnouncer);
 
-  displayedColumns: string[] = ['position', 'nombre', 'fecha', 'importe', 'direccion'];
+  displayedColumns: string[] = ['position', 'nombre', 'fecha', 'importe', 'direccion', 'pdf'];
   
   dataSource:any;
 
