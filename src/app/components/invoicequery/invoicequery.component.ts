@@ -5,11 +5,12 @@ import {MatSort, Sort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { InvoiceService } from '../../services/invoice.service';
 import { DatefilterPipe } from '../../pipes/datefilter.pipe';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-invoicequery',
   standalone: true,
-  imports: [MatTableModule, MatSortModule, DatefilterPipe],
+  imports: [MatTableModule, MatSortModule, DatefilterPipe, MatPaginatorModule],
   templateUrl: './invoicequery.component.html',
   styleUrl: './invoicequery.component.scss'
 })
@@ -22,6 +23,8 @@ export class InvoicequeryComponent implements OnInit, AfterViewInit {
 
   @ViewChild(MatSort) sort!: MatSort;
 
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+
   constructor(
     private _invoiceService: InvoiceService
   ){}
@@ -33,6 +36,7 @@ export class InvoicequeryComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator; 
   }
 
   /** Announce the change in sort state for assistive technology. */
