@@ -44,7 +44,7 @@
         >
           Fecha de emisión
         </th>
-        <td mat-cell *matCellDef="let element">{{ element.fecha }}</td>
+        <td mat-cell *matCellDef="let element">{{ element.fecha | datefilter }}</td>
       </ng-container>
 
       <!-- Symbol Column -->
