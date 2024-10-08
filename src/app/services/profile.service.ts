@@ -36,4 +36,15 @@ export class ProfileService {
   getProfile(){
     return this.dataSource;
   }
+
+  updateProfileforId(profile: Profile){
+    const index = ELEMENT_DATA.findIndex((element) => element.position === profile.position);
+    if (index !== -1) {
+      ELEMENT_DATA[index] = profile;
+      this.dataSource.data = [...ELEMENT_DATA];
+      console.log(`Perfil actualizado:`, ELEMENT_DATA[index]);
+    } else {
+      console.log('Perfil no encontrado.');
+    }
+  }
 }

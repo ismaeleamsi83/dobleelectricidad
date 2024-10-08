@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatSort, MatSortModule} from '@angular/material/sort';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { DatefilterPipe } from '../../pipes/datefilter.pipe';
@@ -45,7 +45,6 @@ export class ProfilequeryComponent implements AfterViewInit {
   }
 
   editProfile(profile: Profile){
-    console.log(profile);
     this.openDialog(profile);
   }
 
@@ -55,10 +54,10 @@ export class ProfilequeryComponent implements AfterViewInit {
     });
 
     dialogRef.afterClosed().subscribe((result: Profile | boolean | undefined) => {
-      // console.log(`Dialog result: ${result}`);
-      console.log(result);
+      
       if(!(result == false || result == undefined)){
-        console.log("Se guarda");
+        const profile = result as Profile;
+        this.profileService.updateProfileforId(profile);
       }
     });
   }
