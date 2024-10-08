@@ -54,8 +54,12 @@ export class ProfilequeryComponent implements AfterViewInit {
       data: {profile}
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+    dialogRef.afterClosed().subscribe((result: Profile | boolean | undefined) => {
+      // console.log(`Dialog result: ${result}`);
+      console.log(result);
+      if(!(result == false || result == undefined)){
+        console.log("Se guarda");
+      }
     });
   }
 

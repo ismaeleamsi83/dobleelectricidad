@@ -7,6 +7,11 @@ export const dashboardRoutes: Routes = [
         loadComponent: () => import('./dashboard/dashboard.component').then(c => c.DashboardComponent),
         children: [
             {
+                path: '',
+                redirectTo: 'invoice-query',
+                pathMatch: 'full'
+            },
+            {
                 path: 'invoice-query',
                 loadComponent: () => import('./invoicequery/invoicequery.component').then(m => m.InvoicequeryComponent)
             },
