@@ -1,0 +1,20 @@
+main {
+    margin: 32px auto;
+    max-width: 800px;
+    width: 100%;
+    // background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 32px;
+}
+
+.table-container {
+    overflow-x: auto;
+    // -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    touch-action: cross-slide-x;
+    box-shadow: 1px 1px 6px gainsboro;
+}
