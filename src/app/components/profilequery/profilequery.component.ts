@@ -44,7 +44,7 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class ProfilequeryComponent implements AfterViewInit {
 
-  displayedColumns: string[] = ['position', 'nombreTitular', 'correoElectronico', 'fechaDeAlta', 'direccionDeEnvio'];
+  displayedColumns: string[] = ['position', 'nombreTitular', 'correoElectronico', 'fechaDeAlta', 'direccionDeEnvio', 'editar'];
   dataSource:any;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -59,6 +59,10 @@ export class ProfilequeryComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  editProfile(idProfile: number){
+    console.log(idProfile);
   }
 
 }
