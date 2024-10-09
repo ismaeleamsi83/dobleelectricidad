@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "DobleElectricidad": {
+      "i18n":{
+        "sourceLocale": "es",
+        "locales": {
+          "en-US": {
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,13 +24,15 @@
       "prefix": "app",
       "architect": {
         "build": {
+          
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": ["es", "en-US"],
             "outputPath": "dist/doble-electricidad",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -50,6 +61,11 @@
               ],
               "outputHashing": "all"
             },
+            "en-US": {
+              "localize": ["en-US"],
+              "outputPath": "dist/doble-electricidad-en/",
+              "i18nMissingTranslation": "error"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -66,6 +82,9 @@
             },
             "development": {
               "buildTarget": "DobleElectricidad:build:development"
+            },
+            "en-US": {
+              "buildTarget": "DobleElectricidad:build:en-US"
             }
           },
           "defaultConfiguration": "development"

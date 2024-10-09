@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1172878060054216999" datatype="html">
+        <source>Introduzca su Email</source>
+        <target>Enter your Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8706248558958874796" datatype="html">
+        <source>Introduzca su Contraseña</source>
+        <target>Enter your Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2538238288084346949" datatype="html">
+        <source>Credenciales no válidas...</source>
+        <target>Invalid credentials...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6019876260813388409" datatype="html">
+        <source>ACCESO</source>
+        <target>ACCESS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4769836128721609214" datatype="html">
+        <source>Consultar facturas</source>
+        <target>Consult invoices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2490510770324167122" datatype="html">
+        <source> Nombre de la factura </source>
+        <target> Invoice name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6598354765712500836" datatype="html">
+        <source> Fecha de emisión </source>
+        <target> Issue date </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8989494776108599430" datatype="html">
+        <source> Importe </source>
+        <target> Amount </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6519822197442214157" datatype="html">
+        <source> Dirección del suministro </source>
+        <target> Supply Address </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2790924695780138419" datatype="html">
+        <source>Ver/Descargar</source>
+        <target>View/Download</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/invoicequery/invoicequery.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="526413207414196372" datatype="html">
+        <source>Consultar datos personales</source>
+        <target>Consult personal data</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7994917603257909831" datatype="html">
+        <source>Titular</source>
+        <target>Holder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4868888201950564133" datatype="html">
+        <source>Correo Electrónico</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2908278185792363596" datatype="html">
+        <source>Fecha de alta</source>
+        <target>Registration date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6846639458988064772" datatype="html">
+        <source> Direccion de envio </source>
+        <target> Mailing address </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2153980152639237955" datatype="html">
+        <source>Editar</source>
+        <target>Edit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2332784393609439278" datatype="html">
+        <source> Editar </source>
+        <target>Edit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profilequery/profilequery.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5910230118126281523" datatype="html">
+        <source>Cerrar Sesión</source>
+        <target>Sign Out</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3281149290486938028" datatype="html">
+        <source>Editar datos personales</source>
+        <target>Edit personal data</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9066805337863542146" datatype="html">
+        <source>Nombre del Titular:</source>
+        <target>Owner Name:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3595705631337459146" datatype="html">
+        <source>Correo Electrónico:</source>
+        <target>Email:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1833094240757711294" datatype="html">
+        <source>Fecha de Alta:</source>
+        <target>Registration Date:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3233431083734811058" datatype="html">
+        <source>Dirección de Envío:</source>
+        <target>Mailing address:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6402951927316857780" datatype="html">
+        <source>Cancelar</source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5681858329013258618" datatype="html">
+        <source> Guardar cambios </source>
+        <target> Save changes </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/dialog-profile/dialog-profile.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

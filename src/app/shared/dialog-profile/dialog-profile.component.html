@@ -1,27 +1,27 @@
-<h2 mat-dialog-title>Editar datos personales</h2>
+<h2 mat-dialog-title i18n>Editar datos personales</h2>
 <mat-dialog-content class="mat-typography">
   <form [formGroup]="profileForm">
     <div>
-      <label>Nombre del Titular:</label>
+      <label i18n>Nombre del Titular:</label>
       <input type="text" formControlName="nombreTitular" />
     </div>
     <div>
-      <label>Correo Electrónico:</label>
+      <label i18n>Correo Electrónico:</label>
       <input type="email" formControlName="correoElectronico" />
     </div>
     <div>
-      <label>Fecha de Alta:</label>
+      <label i18n>Fecha de Alta:</label>
       <input type="date" formControlName="fechaDeAlta" />
     </div>
     <div>
-      <label>Dirección de Envío:</label>
+      <label i18n>Dirección de Envío:</label>
       <input type="text" formControlName="direccionDeEnvio" />
     </div>
   </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button [mat-dialog-close]="false">Cancel</button>
-  <button mat-button [mat-dialog-close]="profileForm.value" cdkFocusInitial>
+  <button mat-button [mat-dialog-close]="false" i18n>Cancelar</button>
+  <button mat-button [mat-dialog-close]="profileForm.value" cdkFocusInitial i18n>
     Guardar cambios
   </button>
 </mat-dialog-actions>

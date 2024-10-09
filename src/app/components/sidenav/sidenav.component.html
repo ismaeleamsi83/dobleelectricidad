@@ -1,7 +1,7 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side"  [opened]="isOpen">
-    <h4 [routerLink]="'invoice-query'" (click)="toggleMenu()">Consultar facturas</h4>
-    <h4 [routerLink]="'profile-query'" (click)="toggleMenu()">Consultar datos personales</h4>
-    <h4 (click)="toggleMenu(); closeSession()">Cerrar Sesión</h4>
+    <h4 [routerLink]="'invoice-query'" (click)="toggleMenu()" i18n>Consultar facturas</h4>
+    <h4 [routerLink]="'profile-query'" (click)="toggleMenu()" i18n>Consultar datos personales</h4>
+    <h4 (click)="toggleMenu(); closeSession()" i18n>Cerrar Sesión</h4>
   </mat-drawer>
 </mat-drawer-container>

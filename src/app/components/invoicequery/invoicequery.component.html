@@ -1,5 +1,5 @@
 <main>
-  <h1>Consultar facturas</h1>
+  <h1 i18n>Consultar facturas</h1>
   <div class="table-container">
     <table
       mat-table
@@ -28,7 +28,7 @@
           *matHeaderCellDef
           mat-sort-header
           sortActionDescription="Sort by name"
-        >
+          i18n>
           Nombre de la factura
         </th>
         <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
@@ -41,7 +41,7 @@
           *matHeaderCellDef
           mat-sort-header
           sortActionDescription="Sort by weight"
-        >
+          i18n>
           Fecha de emisión
         </th>
         <td mat-cell *matCellDef="let element">{{ element.fecha | datefilter }}</td>
@@ -54,7 +54,7 @@
           *matHeaderCellDef
           mat-sort-header
           sortActionDescription="Sort by symbol"
-        >
+          i18n>
           Importe
         </th>
         <td mat-cell *matCellDef="let element">{{ element.importe }}€</td>
@@ -67,7 +67,7 @@
           *matHeaderCellDef
           mat-sort-header
           sortActionDescription="Sort by weight"
-        >
+          i18n>
           Dirección del suministro
         </th>
         <td mat-cell *matCellDef="let element">{{ element.direccion }}</td>
@@ -84,7 +84,7 @@
           PDF
         </th>
         <td mat-cell *matCellDef="let element">
-          <a href="{{element.pdfUrl}}" target="_blank">Ver/Descargar</a>
+          <a href="{{element.pdfUrl}}" target="_blank" i18n>Ver/Descargar</a>
         </td>
       </ng-container>
 
