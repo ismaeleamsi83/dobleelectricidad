@@ -29,5 +29,9 @@ export class AuthService {
     return this.loginState$;
   }
 
+  closeLogin(){
+    this.loginState.next(false);
+    sessionStorage.setItem("isLogin", "false");
+  }
 
 }

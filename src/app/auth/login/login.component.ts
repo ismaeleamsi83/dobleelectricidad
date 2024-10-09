@@ -47,9 +47,6 @@ export class LoginComponent implements OnInit {
       }
     })
     
-    // if(isLogin == true){
-    //   this.router.navigateByUrl('/dashboard');
-    // }
   }
 
   onSubmit(){

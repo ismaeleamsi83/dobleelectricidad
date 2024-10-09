@@ -2,5 +2,6 @@
   <mat-drawer #drawer class="example-sidenav" mode="side"  [opened]="isOpen">
     <h4 [routerLink]="'invoice-query'" (click)="toggleMenu()">Consultar facturas</h4>
     <h4 [routerLink]="'profile-query'" (click)="toggleMenu()">Consultar datos personales</h4>
+    <h4 (click)="toggleMenu(); closeSession()">Cerrar Sesión</h4>
   </mat-drawer>
 </mat-drawer-container>
