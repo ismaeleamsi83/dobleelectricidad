@@ -5,3 +5,4 @@ export interface Profile {
   fechaDeAlta: Date;
   direccionDeEnvio: string;
 }
+//Aquí hago la estructura y tipos que tiene la informacion que tendra los datos personales

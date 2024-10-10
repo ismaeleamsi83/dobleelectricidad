@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-
+// Para mostrar solo los tres valores de la fecha 
 @Pipe({
   name: 'datefilter',
   standalone: true

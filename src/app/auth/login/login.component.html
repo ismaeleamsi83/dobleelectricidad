@@ -13,3 +13,10 @@
   }
   <button type="submit" [disabled]="forms.invalid" i18n>ACCESO</button>
 </form>
+<!-- Es un formulario que se controla con el nombre del grupo llamado forms en el
+ componente, en el button de tipo submit llama al metodo onSubmit que esta arriba 
+ la llamada y en el componente este metodo para realizar el login
+ El botón ACCESO está desactivado hasta que el los dos campos no sean validos para
+ realizar la comprobación del login y si las credenciales no son correctas
+ muestra el mensaje que esta con el if
+ todo tag que tiene i18n es para la traduccion multi idioma -->

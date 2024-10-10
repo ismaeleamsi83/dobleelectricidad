@@ -14,7 +14,8 @@ export class HeaderComponent {
 
   @Output() menuToggle = new EventEmitter<void>();
 
+  // Emite el evento para que el componente padre lo reciba
   toggleMenu() {
-    this.menuToggle.emit();  // Emite el evento para que el componente padre lo reciba
+    this.menuToggle.emit();  
   }
 }

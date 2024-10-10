@@ -6,6 +6,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideHttpClient } from '@angular/common/http';
 import { LOCALE_ID } from '@angular/core';
 
+// Al ser Standalone se importa los provide aquí para poder utilizar depende que modulo, animacion o servicio
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideAnimationsAsync(),
               provideAnimationsAsync(), provideHttpClient(),

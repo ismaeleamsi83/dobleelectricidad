@@ -5,6 +5,8 @@ import { Invoice } from '../interfaces/invoice';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 
+// Emulo los datos que recibiria del backend que tendria que venir mediante httpclient mediante un get
+// Pero al no tener backend lo emulo asi
 const ELEMENT_DATA: Invoice[] = [
   { position: 1, nombre: 'Factura de Electricidad', fecha: new Date(2023, 0, 15), importe: 100.50, direccion: 'Calle 123, Ciudad A', pdfUrl: '../../../assets/pdfs/ejemplo-endesa.pdf' },
   { position: 2, nombre: 'Factura de Agua', fecha: new Date(2023, 1, 20), importe: 35.75, direccion: 'Avenida 456, Ciudad B', pdfUrl: '../../../assets/pdfs/ejemplo-endesa.pdf' },
@@ -35,13 +37,14 @@ const ELEMENT_DATA: Invoice[] = [
 export class InvoiceService {
 
   
-
+  // Los datos lo guardo de esta manera para que lo pueda manipular la tabla con Angular Material
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   constructor(
     private http: HttpClient
   ) { }
 
+  // El metodo que devuelve los datos 
   getInvoice(){
     return this.dataSource;
   }

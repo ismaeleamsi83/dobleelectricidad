@@ -6,3 +6,4 @@ export interface Invoice {
   direccion: string;
   pdfUrl: string;
 }
+//Aquí hago la estructura y tipos que tiene la informacion que tendra las facturas

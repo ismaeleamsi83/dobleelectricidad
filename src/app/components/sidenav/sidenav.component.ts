@@ -17,17 +17,20 @@ export class SidenavComponent {
 
   @Input() isOpen = false;
 
+  
   @Output() menuToggle = new EventEmitter<void>();
 
+  // Para utilizar el servicio de auth
   constructor(
     private authService: AuthService
   ){}
   
+  // Emito al componente padre el valor si es true o false que esta mostrando o no el sidenav
   toggleMenu() {
     this.menuToggle.emit();  // Emite el evento para que el componente padre lo reciba
   }
 
-
+  // Aquí cierro sesion si clico Cerrar sesion
   closeSession(){
     this.authService.closeLogin();
   }

@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Profile } from '../interfaces/profile';
 import { MatTableDataSource } from '@angular/material/table';
 
+// Emulo los datos que recibiria del backend que tendria que venir mediante httpclient mediante un get
+// Pero al no tener backend lo emulo asi
 const ELEMENT_DATA: Profile[] = [
   {position: 1, nombreTitular: 'Juan Pérez', correoElectronico: 'juan.perez@example.com', fechaDeAlta: new Date('2023-01-15'), direccionDeEnvio: 'Calle Falsa 123'},
   {position: 2, nombreTitular: 'María Gómez', correoElectronico: 'maria.gomez@example.com', fechaDeAlta: new Date('2023-02-10'), direccionDeEnvio: 'Avenida Siempre Viva 456'},
@@ -30,13 +32,16 @@ const ELEMENT_DATA: Profile[] = [
 })
 export class ProfileService {
 
+  // Los datos lo guardo de esta manera para que lo pueda manipular la tabla con Angular Material
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   constructor() { }
 
+  // El metodo que devuelve los datos
   getProfile(){
     return this.dataSource;
   }
 
+  // El metodo que actualiza los datos de una persona en concreta
   updateProfileforId(profile: Profile){
     const index = ELEMENT_DATA.findIndex((element) => element.position === profile.position);
     if (index !== -1) {

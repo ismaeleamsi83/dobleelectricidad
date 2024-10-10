@@ -13,17 +13,22 @@ import { SidenavComponent } from "../sidenav/sidenav.component";
 })
 export class DashboardComponent implements OnInit {
 
+  // Controlo si esta mostrando el menu o no lateral
   sidenavOpened = false;
 
+  // Para poder utilizar el router y el servicio auth
   constructor(
     private authService: AuthService,
     private router: Router
   ){}
 
+  // Se carga siempre que se carga el componente
   ngOnInit(): void {
     this.isLogin();
   }
 
+
+  // Compruebo si esta logueado o no por si alguien mete la ruta a mano
   isLogin(){
     this.authService.getStateLogin().subscribe({
       next: (res) => {
@@ -37,6 +42,7 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  // Cambio el valor si se esta mostrando el menu lateral o no, para controlarlo
   toggleSidenav() {
     this.sidenavOpened = !this.sidenavOpened;
   }

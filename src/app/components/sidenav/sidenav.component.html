@@ -1,3 +1,7 @@
+<!-- muestro el menu lateral si clico a consultar facturas redirecciona a la ruta
+ invoice-query, igual para datos personales profile-query
+ y por ultimo si hago click en cerrar sesion ejecuta el metodo closeSession
+ todos con el metodo toggleMenu para cerrar el menu lateral cada vez que le das a una opcion -->
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side"  [opened]="isOpen">
     <h4 [routerLink]="'invoice-query'" (click)="toggleMenu()" i18n>Consultar facturas</h4>
